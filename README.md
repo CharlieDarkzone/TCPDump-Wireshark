@@ -19,9 +19,13 @@
 ```bash
 sudo tcpdump -i eth0 -s0 -w tvn.pcap
 
+```
+
 📸 Evidence:
 
-![TCPDump 1](images/tcpdump.png)
+![TCPDump 1](/images/tcpdump.png)
+
+
 
 2. Traffic generation
 Accessed www.tvn.cl
@@ -29,10 +33,14 @@ Navigated within the site
 
 📸 Evidence:
 
+![TCPDump 2](/images/tcpdump_2.png)
+
 3. Open in Wireshark
 wireshark tvn.pcap
 
 📸 Evidence:
+
+![TCPDump 3](/images/tcpdump_3.png)
 
 🌐 DNS Analysis
 
@@ -46,6 +54,8 @@ pxl.iqm.com (tracking)
 
 📸 Evidence:
 
+![TCPDump 4](/images/tcpdump_5.png)
+
 🔐 TLS / HTTPS Analysis
 
 Encrypted traffic was observed using:
@@ -57,6 +67,8 @@ Multiple secure connections to external services were identified.
 
 📸 Evidence:
 
+![TCPDump 5](/images/tcpdump_6.png)
+
 🧠 Notable Traffic
 🔸 STP (Spanning Tree Protocol)
 Observed in capture
@@ -65,12 +77,15 @@ Not related to web browsing
 
 📸 Evidence:
 
+![TCPDump 6](/images/tcpdump_8.png)
+
 📊 Traffic Classification
 Type	Description
 Normal	Website, streaming, CDN
 Third-party	Analytics, ads, tracking
 Infrastructure	STP
 Malicious	None detected
+
 🧠 Key Findings
 Web traffic involves multiple services
 High traffic ≠ malicious activity
